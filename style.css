@@ -1,0 +1,83 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    background-color: rgb(3, 20, 20);
+    font-family: monospace;
+    padding: 50px;
+    display: grid;
+    align-items: center;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
+    color: gold;
+}
+
+.game-board {
+    height: 450px;
+    width: 450px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+
+}
+
+.game-square {
+    color: gold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    height: 100%;
+    width: 100%;
+    border-right: 1px solid gold;
+    border-bottom: 1px solid gold;
+    /* curser: pointer; */
+}
+
+.game-square:hover {
+    background-color: lightblue;
+}
+
+.game-square:nth-child(3n) {
+    border-right: none;
+}
+
+.game-square:nth-child(n+7) {
+    border-bottom: none;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 {
+    color: antiquewhite;
+    font-size: 100px;
+}
+
+button {
+    background-color: transparent;
+    color: gold;
+    border: 3px solid white;
+    padding: 10px 30px;
+    font-size: 50px;
+}
