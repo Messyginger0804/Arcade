@@ -1,20 +1,10 @@
 // gamme state
 
-
-
 const players = ['X', 'O'];
 const gameBoard = ['', '', '', '', '', '', '', '', '',];
 const playerTurnElem = document.querySelector('.players_turn');
 let currentPlayer;
 let gameBoardElem;
-
-// const createTitle = title => {
-//     const titleElem = document.createElement('h1');
-
-//     titleElem.textContent = 'Tic-Tac-Toe';
-
-//     document.body.appendChild(titleElem);
-// };
 
 const renderPlayer = () => {
     let text;
@@ -36,6 +26,10 @@ const makeGameBoardElem = () => {
 
     gameBoardElem.classList.add('game-board');
 
+
+    for (let square = 0; square < 9; square++) {
+        gameBoardElem.appendChild(makeSquareElem(square));
+    }
     return gameBoardElem;
 };
 
@@ -58,20 +52,6 @@ const makeSquareElem = squareNumber => {
     return squareElement;
 };
 
-// @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-// const makeStartButton = () => {
-//     const startButtonElem = document.createElement('button');
-
-//     startButtonElem.textContent = ('start game');
-//     const board = document.querySelector('.game-board');
-
-//     document.body.insertAdjacentElement('afterend', board);
-
-//     console.log('anything')
-
-
-// }
 
 const switchPlayer = () => {
     if (currentPlayer === players[0]) {
@@ -126,7 +106,7 @@ const completeGame = message => {
     restartButtonElem.textContent = 'RESTART';
 
     restartButtonElem.addEventListener('click', (event) => {
-        resetGame();
+        resetGame(event);
         document.body.removeChild(overLayElem);
         // document.button("restart").reset();
     });
@@ -141,15 +121,17 @@ const resetGame = () => {
         document.body.removeChild(gameBoardElem);
     }
 
-    gameBoardElem = makeGameBoardElem();
 
+    gameBoardElem = makeGameBoardElem();
     for (let square = 0; square < 9; square++) {
         gameBoardElem.appendChild(makeSquareElem(square));
     }
 
+
     currentPlayer = players[1];
 
     document.body.appendChild(gameBoardElem);
+    gameBoard.fill('')
 };
 
 // createTitle();
