@@ -96,7 +96,6 @@ const checkboard = () => {
 const completeGame = message => {
     const overLayElem = document.createElement('div');
 
-
     const endMessageElem = document.createElement('h2');
     endMessageElem.textContent = message;
 
