@@ -6,8 +6,8 @@ Hello! This is the README for My's first coding project, a Tic-Tac-Toe game crea
 
 ## Project Overview
 
-- **Project Name:** Tic-Tac-Toe Game
-- **Created By:** Jeremy Ashley
+- **Project Name:** [Tic-Tac-Toe Game](https://tictactoebyjc.netlify.app/)
+- **Created By:** [Jeremy Ashley](https://jcashleyportfolio.netlify.app/)
 - **GitHub Repository:** https://github.com/Messyginger0804/Arcade.git
 
 ## Project Description
@@ -36,7 +36,7 @@ To play this Tic-Tac-Toe game, simply follow these steps:
 
 ## Technologies Used
 
-Thiss project was built using the following technologies:
+This project was built using the following technologies:
 
 - HTML: For structuring the game interface.
 - CSS: For styling the game board and user interface.
@@ -45,6 +45,10 @@ Thiss project was built using the following technologies:
 ## Getting Started
 
 To experience this Tic-Tac-Toe game:
+
+by visiting https://tictactoebyjc.netlify.app/
+
+or:
 
 1. Clone or download the project repository to your local machine.
 
@@ -62,6 +66,6 @@ This project is open-source, and its code is available in the associated GitHub 
 
 ## Contact
 
-If you have any questions, feedback, or would like to connect with me, you can reach out to me https://www.linkedin.com/in/jeremy-ashley-webdev/.
+If you have any questions, feedback, or would like to connect with me, you can reach out to me on [LinkedIn](https://www.linkedin.com/in/jeremy-ashley-webdev/).
 
 Thank you for checking out My Tic-Tac-Toe game, and I hope you enjoy playing it as much as I enjoyed creating it!
